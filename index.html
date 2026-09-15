@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Untuk Ntutt ❤️</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Caveat", cursive;
+      font-size: 22px;
+      background: linear-gradient(
+        135deg,
+        #ffd6e7,
+        #fff0f6,
+        #ffe4ef
+      );
+      color: #5f3547;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    h1,
+    h2 {
+      font-family: "Caveat", cursive;
+      letter-spacing: 1px;
+    }
+
+
+    /* =========================
+       FLOATING HEARTS
+    ========================= */
+
+    .heart {
+      position: fixed;
+      bottom: -20px;
+      font-size: 20px;
+      animation: naik 7s linear infinite;
+      opacity: 0.7;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    @keyframes naik {
+
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+      }
+
+      20% {
+        opacity: 0.8;
+      }
+
+      100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+      }
+
+    }
+
+
+    /* =========================
+       CONTAINER
+    ========================= */
+
+    .container {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 900px;
+      margin: auto;
+      padding: 25px;
+    }
+
+
+    /* =========================
+       OPENING
+    ========================= */
+
+    .opening {
+      min-height: 100vh;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      text-align: center;
+    }
+
+    .opening-card {
+      background: rgba(255,255,255,0.7);
+
+      backdrop-filter: blur(12px);
+
+      padding: 45px 30px;
+
+      border-radius: 30px;
+
+      box-shadow:
+        0 15px 50px rgba(190, 90, 130, 0.2);
+
+      animation: muncul 1.2s ease;
+    }
+
+    @keyframes muncul {
+
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+    }
+
+    .opening h1 {
+      font-size: 48px;
+      color: #d85d88;
+      margin-bottom: 15px;
+    }
+
+    .opening p {
+      font-size: 24px;
+      line-height: 1.5;
+      margin-bottom: 25px;
+    }
+
+
+    /* =========================
+       BUTTON
+    ========================= */
+
+    button {
+      border: none;
+
+      padding: 12px 28px;
+
+      border-radius: 30px;
+
+      background: #e8759d;
+
+      color: white;
+
+      font-size: 20px;
+
+      font-family: "Quicksand", sans-serif;
+
+      font-weight: 700;
+
+      cursor: pointer;
+
+      box-shadow:
+        0 7px 20px rgba(216, 93, 136, 0.3);
+
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      background: #d85d88;
+    }
+
+
+    /* =========================
+       MAIN
+    ========================= */
+
+    #main {
+      display: none;
+      animation: muncul 1s ease;
+    }
+
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      text-align: center;
+      padding: 70px 10px 40px;
+    }
+
+    .hero .emoji {
+      font-size: 55px;
+
+      animation: goyang 2s infinite;
+    }
+
+    @keyframes goyang {
+
+      0%,
+      100% {
+        transform: rotate(-5deg);
+      }
+
+      50% {
+        transform: rotate(5deg);
+      }
+
+    }
+
+    .hero h1 {
+      font-size: 52px;
+
+      color: #d85d88;
+
+      margin: 15px 0;
+    }
+
+    .hero p {
+      font-size: 24px;
+    }
+
+
+    /* =========================
+       CARD
+    ========================= */
+
+    .card {
+      background: rgba(255,255,255,0.75);
+
+      backdrop-filter: blur(10px);
+
+      border-radius: 25px;
+
+      padding: 30px;
+
+      margin: 25px 0;
+
+      box-shadow:
+        0 10px 35px rgba(190, 90, 130, 0.15);
+    }
+
+    .card h2 {
+      color: #d85d88;
+
+      font-size: 38px;
+
+      margin-bottom: 15px;
+
+      text-align: center;
+    }
+
+
+    /* =========================
+       LETTER
+    ========================= */
+
+    .letter {
+      line-height: 1.6;
+      font-size: 24px;
+    }
+
+
+    /* =========================
+       REASONS
+    ========================= */
+
+    .reasons {
+      display: grid;
+
+      grid-template-columns:
+        repeat(auto-fit, minmax(200px, 1fr));
+
+      gap: 15px;
+
+      margin-top: 20px;
+    }
+
+    .reason {
+      background: #fff5f9;
+
+      padding: 20px;
+
+      border-radius: 20px;
+
+      text-align: center;
+
+      transition: 0.3s;
+
+      font-size: 22px;
+    }
+
+    .reason:hover {
+      transform: translateY(-5px);
+    }
+
+    .reason span {
+      font-size: 30px;
+
+      display: block;
+
+      margin-bottom: 10px;
+    }
+
+
+    /* =========================
+       COUNTER
+    ========================= */
+
+    .counter {
+      text-align: center;
+
+      font-size: 24px;
+
+      line-height: 1.6;
+    }
+
+    .counter strong {
+      color: #d85d88;
+
+      font-size: 38px;
+
+      font-family: "Quicksand", sans-serif;
+    }
+
+
+    /* =========================
+       SURPRISE
+    ========================= */
+
+    .surprise {
+      text-align: center;
+
+      padding: 35px 20px;
+
+      font-size: 24px;
+    }
+
+    #surpriseText {
+      display: none;
+
+      margin-top: 25px;
+
+      line-height: 1.6;
+
+      animation: muncul 1s ease;
+    }
+
+
+    /* =========================
+       MUSIC PLAYER
+    ========================= */
+
+    .music-player {
+      position: fixed;
+
+      bottom: 20px;
+
+      right: 20px;
+
+      z-index: 999;
+    }
+
+    .music-button {
+      width: 48px;
+      height: 48px;
+
+      padding: 0;
+
+      border: 2px solid rgba(255,255,255,0.8);
+
+      border-radius: 14px;
+
+      background: rgba(232, 117, 157, 0.85);
+
+      backdrop-filter: blur(10px);
+
+      color: white;
+
+      font-size: 21px;
+
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      cursor: pointer;
+
+      box-shadow:
+        0 6px 20px rgba(216, 93, 136, 0.3);
+
+      transition: 0.3s;
+    }
+
+    .music-button:hover {
+      transform: scale(1.1);
+    }
+
+    /* Musik sedang dimainkan */
+    .music-button.playing {
+      animation: muter 3s linear infinite;
+    }
+
+    @keyframes muter {
+
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      text-align: center;
+
+      padding: 50px 10px;
+
+      font-size: 20px;
+
+      opacity: 0.8;
+    }
+
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media(max-width:600px) {
+
+      .opening h1,
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      .opening p {
+        font-size: 22px;
+      }
+
+      .hero p {
+        font-size: 22px;
+      }
+
+      .card {
+        padding: 23px;
+      }
+
+      .letter {
+        font-size: 22px;
+      }
+
+      .card h2 {
+        font-size: 34px;
+      }
+
+      .music-player {
+        bottom: 15px;
+        right: 15px;
+      }
+
+      .music-button {
+        width: 44px;
+        height: 44px;
+
+        font-size: 19px;
+
+        border-radius: 13px;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+  <!-- =========================
+       FLOATING HEARTS
+  ========================= -->
+
+  <div class="heart" style="left:10%; animation-delay:0s;">❤️</div>
+
+  <div class="heart" style="left:25%; animation-delay:2s;">💗</div>
+
+  <div class="heart" style="left:45%; animation-delay:4s;">💕</div>
+
+  <div class="heart" style="left:65%; animation-delay:1s;">💖</div>
+
+  <div class="heart" style="left:85%; animation-delay:3s;">💗</div>
+
+
+  <!-- =========================
+       OPENING
+  ========================= -->
+
+  <section class="opening" id="opening">
+
+    <div class="opening-card">
+
+      <div style="font-size:55px;">
+        💌
+      </div>
+
+      <h1>
+        haii ntuttt ❤️
+      </h1>
+
+      <p>
+        ada sesuatu yang mau aku kasih ke kamu...
+        <br>
+
+        tapi bukan coklat, bukan bunga juga.
+
+        <br><br>
+
+        jadi buka aja dulu yaa 😌
+      </p>
+
+      <button onclick="openWebsite()">
+        buka suratnya 💗
+      </button>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       MUSIC
+  ========================= -->
+
+  <div class="music-player">
+
+    <button
+      id="musicBtn"
+      class="music-button"
+      onclick="toggleMusic()"
+      aria-label="Play music"
+    >
+      🎵
+    </button>
+
+    <audio id="bgMusic" loop>
+
+      <source
+        src="until-i-found-you.mp3"
+        type="audio/mpeg"
+      >
+
+    </audio>
+
+  </div>
+
+
+
+  <!-- =========================
+       MAIN
+  ========================= -->
+
+  <main id="main">
+
+    <div class="container">
+
+
+      <!-- HERO -->
+
+      <section class="hero">
+
+        <div class="emoji">
+          🌷
+        </div>
+
+        <h1>
+          Untuk Ntutt
+        </h1>
+
+        <p>
+          seseorang yang mungkin nggak selalu pandai berkata-kata,
+          tapi selalu punya tempat khusus buat kamu.
+        </p>
+
+      </section>
+
+
+
+      <!-- LETTER -->
+
+      <section class="card">
+
+        <h2>
+          💌 sedikit surat dari aku
+        </h2>
+
+        <div class="letter">
+
+          <p>
+            haii ntutt...
+          </p>
+
+          <br>
+
+          <p>
+            mungkin aku nggak selalu bisa jadi orang yang paling sempurna
+            buat kamu. kadang aku bisa bikin kamu kesel, kadang bikin kamu
+            bingung, bahkan mungkin ada saatnya aku bikin kamu ngerasa
+            kurang diperhatiin.
+          </p>
+
+          <br>
+
+          <p>
+            tapi ada satu hal yang pengen aku kamu tahu...
+            di balik semua kurangnya aku, rasa sayangku ke kamu
+            nggak pernah sesederhana kata-kata.
+          </p>
+
+          <br>
+
+          <p>
+            aku suka cara kamu hadir di hidup ku.
+            suka obrolan kecil kita, ketawa kita, bercanda kita,
+            bahkan hal-hal random yang mungkin kelihatannya sepele.
+          </p>
+
+          <br>
+
+          <p>
+            karena ternyata hal-hal kecil itu yang bikin hari aku
+            terasa sedikit lebih berwarna.
+          </p>
+
+          <br>
+
+          <p>
+            jadi kalau suatu hari kamu bertanya,
+            <i>
+              "kamu masih sayang aku nggak?"
+            </i>
+          </p>
+
+          <br>
+
+          <p>
+            jawabannya tetap sama:
+
+            <b>
+              iya, ntutt. masih. ❤️
+            </b>
+          </p>
+
+          <br>
+
+          <p>
+            mungkin aku nggak selalu bisa menunjukkannya dengan cara
+            yang kamu harapkan, tapi bukan berarti rasa itu nggak ada.
+          </p>
+
+          <br>
+
+          <p>
+            terima kasih karena sudah menjadi bagian dari ceritaku.
+            semoga kita bisa terus belajar, terus tumbuh,
+            dan terus menemukan alasan untuk tetap tersenyum bersama.
+          </p>
+
+          <br>
+
+          <p style="text-align:center;">
+
+            <b>
+
+              dari epan,
+
+              <br>
+
+              buat ntutt yang selalu punya tempat sendiri di hatiku. ❤️
+
+            </b>
+
+          </p>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- REASONS -->
+
+      <section class="card">
+
+        <h2>
+          🌷 kenapa aku sayang kamu??
+        </h2>
+
+        <div class="reasons">
+
+
+          <div class="reason">
+
+            <span>
+              💗
+            </span>
+
+            karena kamu adalah kamu.
+
+          </div>
+
+
+          <div class="reason">
+
+            <span>
+              🌸
+            </span>
+
+            karena hadir kamu bisa bikin hari terasa beda.
+
+          </div>
+
+
+          <div class="reason">
+
+            <span>
+              ✨
+            </span>
+
+            karena sama kamu, hal kecil pun bisa jadi kenangan.
+
+          </div>
+
+
+          <div class="reason">
+
+            <span>
+              💐
+            </span>
+
+            karena kamu punya tempat yang nggak bisa digantikan orang lain.
+
+          </div>
+
+
+          <div class="reason">
+
+            <span>
+              🌙
+            </span>
+
+            karena bahkan ketika hari sedang nggak baik-baik aja,
+            kamu tetap seseorang yang ingin aku temui.
+
+          </div>
+
+
+          <div class="reason">
+
+            <span>
+              ❤️
+            </span>
+
+            dan karena...
+
+            <br>
+
+            yaa karena aku sayang kamu.
+
+          </div>
+
+
+        </div>
+
+      </section>
+
+
+
+      <!-- COUNTER -->
+
+      <section class="card">
+
+        <h2>
+          ⏳ tentang kita
+        </h2>
+
+        <div class="counter">
+
+          <p>
+            sejak pertama kali cerita kita dimulai,
+            ada banyak banget hal yang sudah kita lewati.
+          </p>
+
+          <br>
+
+          <strong id="days">
+            0
+          </strong>
+
+          <p>
+            hari yang sudah berlalu ❤️
+          </p>
+
+          <br>
+
+          <p>
+            dan semoga masih banyak hari lagi
+            yang bisa kita isi dengan cerita baru.
+          </p>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- SURPRISE -->
+
+      <section class="card surprise">
+
+        <h2>
+          🎁 ada satu lagi...
+        </h2>
+
+        <p>
+          jangan buru-buru tutup websitenya 😏
+        </p>
+
+        <br>
+
+        <button onclick="showSurprise()">
+          pencet ini 💝
+        </button>
+
+
+        <div id="surpriseText">
+
+          <p>
+            ntuttt...
+          </p>
+
+          <br>
+
+          <p>
+            kalau dunia punya jutaan manusia,
+            aku mungkin tetap akan mencari seseorang
+            yang bisa membuatku merasa nyaman menjadi diri sendiri.
+          </p>
+
+          <br>
+
+          <p>
+            dan entah bagaimana,
+            orang itu adalah kamu.
+          </p>
+
+          <br>
+
+          <p>
+            jadi jangan lupa ya...
+          </p>
+
+          <br>
+
+          <h2>
+            aku selalu sayang kamu ❤️
+          </h2>
+
+          <p>
+            banyak-banyak.
+          </p>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- FOOTER -->
+
+      <footer>
+
+        dibuat dengan sedikit ngasal,
+
+        <br>
+
+        banyak cinta,
+        dan terlalu banyak rasa sayang. ❤️
+
+        <br><br>
+
+        — Epan untuk Ntutt 🌷
+
+      </footer>
+
+
+    </div>
+
+  </main>
+
+
+
+  <script>
+
+
+    /* =========================
+       OPEN WEBSITE
+    ========================= */
+
+    function openWebsite() {
+
+      document.getElementById("opening").style.display = "none";
+
+      document.getElementById("main").style.display = "block";
+
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+
+    }
+
+
+
+    /* =========================
+       MUSIC
+    ========================= */
+
+    const bgMusic =
+      document.getElementById("bgMusic");
+
+    const musicBtn =
+      document.getElementById("musicBtn");
+
+
+    function toggleMusic() {
+
+      if (bgMusic.paused) {
+
+        bgMusic.play()
+          .then(() => {
+
+            musicBtn.classList.add("playing");
+
+          })
+          .catch(() => {
+
+            alert(
+              "musik belum bisa diputar. pastikan file MP3 sudah ada di repository ❤️"
+            );
+
+          });
+
+      } else {
+
+        bgMusic.pause();
+
+        musicBtn.classList.remove("playing");
+
+      }
+
+    }
+
+
+
+    /* =========================
+       SURPRISE
+    ========================= */
+
+    function showSurprise() {
+
+      const text =
+        document.getElementById("surpriseText");
+
+      text.style.display = "block";
+
+
+      for (let i = 0; i < 15; i++) {
+
+        const heart =
+          document.createElement("div");
+
+        heart.innerHTML = "❤️";
+
+        heart.style.position = "fixed";
+
+        heart.style.left =
+          Math.random() * 100 + "vw";
+
+        heart.style.top = "50%";
+
+        heart.style.fontSize =
+          (15 + Math.random() * 25) + "px";
+
+        heart.style.zIndex = "999";
+
+        heart.style.pointerEvents = "none";
+
+
+        document.body.appendChild(heart);
+
+
+        heart.animate(
+
+          [
+
+            {
+              transform:
+                "translateY(0) scale(1)",
+
+              opacity: 1
+            },
+
+            {
+
+              transform:
+                `translateY(-${200 + Math.random() * 400}px)
+                 translateX(${Math.random() * 200 - 100}px)
+                 scale(0.5)`,
+
+              opacity: 0
+
+            }
+
+          ],
+
+          {
+
+            duration:
+              1800 + Math.random() * 1000,
+
+            easing: "ease-out"
+
+          }
+
+        );
+
+
+        setTimeout(() => {
+
+          heart.remove();
+
+        }, 3000);
+
+      }
+
+    }
+
+
+
+    /* =========================
+       COUNTER
+       27 JANUARI 2023
+    ========================= */
+
+    const startDate =
+      new Date("2023-01-27");
+
+    const today =
+      new Date();
+
+    const difference =
+      today.getTime() -
+      startDate.getTime();
+
+    const totalDays =
+      Math.floor(
+        difference /
+        (1000 * 60 * 60 * 24)
+      );
+
+
+    document.getElementById("days").innerText =
+      totalDays;
+
+
+  </script>
+
+</body>
+</html>
